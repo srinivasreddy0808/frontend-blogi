@@ -32,7 +32,7 @@ const Register = () => {
         navigate("/login");
       } else {
         const errorData = await response.json();
-        setError(errorData.message);
+        setError(`${errorData.message} password length minimum 8 plese check`);
       }
     } catch (error) {
       console.error("Registration error:", error);
