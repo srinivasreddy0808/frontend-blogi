@@ -1,0 +1,224 @@
+.container {
+  font-family: "Arial, sans-serif";
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.searchBar {
+  display: inline-block;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.createButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+.blogList {
+  display: grid;
+  gap: 15px;
+}
+
+.blogItem {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.blogTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blogContent {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.editButton,
+.deleteButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.editButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #218838;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.pageButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgb(173, 227, 24);
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.pageButton.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Modal */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  z-index: 1001; /* Ensure modal is above overlay */
+}
+
+/* Modal Title */
+.modalTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.formInput,
+.formTextarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.formTextarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Form Buttons */
+.formButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.saveButton {
+  background-color: #007bff;
+  color: white;
+  margin-right: 15px;
+}
+
+.saveButton:hover {
+  background-color: #0056b3;
+}
+
+.cancelButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268;
+}
+
+/* Blog Image */
+.blogImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.timestamp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: cenetr;
+  margin-right: 50px;
+}
+.createdAt {
+  color: grey;
+}
+.updatedAt {
+  color: grey;
+}
